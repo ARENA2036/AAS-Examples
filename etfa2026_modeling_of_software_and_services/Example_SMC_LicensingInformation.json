@@ -15,8 +15,7 @@
       "idShort": "LicenseType",
       "modelType": "MultiLanguageProperty",
       "value": [
-        { "language": "en", "text": "Apache-2.0" },
-        { "language": "de", "text": "Apache-2.0" }
+        { "language": "en", "text": "Apache-2.0" }
       ],
       "semanticId": {
         "type": "ExternalReference",
@@ -27,11 +26,7 @@
       "idShort": "LicenseModel",
       "modelType": "Property",
       "value": "Subscription",
-      "valueType": "xs:string",
-      "semanticId": {
-        "type": "ExternalReference",
-        "keys": [{ "type": "GlobalReference", "value": "https://admin-shell.io/idta/LicensingInformation/LicenseModel/1/0" }]
-      }
+      "valueType": "xs:string"
     },
     {
       "idShort": "ValidFrom",
@@ -54,7 +49,7 @@
     {
       "idShort": "UsageQuota",
       "modelType": "Property",
-      "value": 1000000,
+      "value": 1000000.0,
       "valueType": "xs:double"
     },
     {
@@ -64,11 +59,20 @@
       "valueType": "xs:string"
     },
     {
+      "idShort": "ActivationKey",
+      "modelType": "Property",
+      "value": "X7K9-M4P2-VN8T-QW3R",
+      "valueType": "xs:string",
+      "semanticId": {
+        "type": "ExternalReference",
+        "keys": [{ "type": "GlobalReference", "value": "https://admin-shell.io/idta/LicensingInformation/ActivationKey/1/0" }]
+      }
+    },
+    {
       "idShort": "LicenseScope",
       "modelType": "MultiLanguageProperty",
       "value": [
-        { "language": "en", "text": "Production" },
-        { "language": "de", "text": "Produktion" }
+        { "language": "en", "text": "Production" }
       ]
     },
     {
@@ -90,13 +94,13 @@
         {
           "idShort": "GeographicRestriction",
           "modelType": "Property",
-          "value": "EU only",
+          "value": "EU + USA",
           "valueType": "xs:string"
         },
         {
           "idShort": "HardwareBinding",
           "modelType": "Property",
-          "value": "Specific MAC addresses only",
+          "value": "Bound to specific hardware ID",
           "valueType": "xs:string"
         }
       ]
@@ -104,7 +108,7 @@
     {
       "idShort": "ComplianceCertificates",
       "modelType": "File",
-      "value": "SOC2_Report_2025.pdf",
+      "value": "/certificates/SOC2_Report_2025.pdf",
       "contentType": "application/pdf"
     }
   ]

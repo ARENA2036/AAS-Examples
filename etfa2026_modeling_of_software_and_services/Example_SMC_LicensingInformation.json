@@ -1,4 +1,5 @@
 {
+  "idShort": "LicensingInformation",
   "semanticId": {
     "type": "ExternalReference",
     "keys": [
@@ -8,7 +9,6 @@
       }
     ]
   },
-  "idShort": "LicensingInformation",
   "modelType": "SubmodelElementCollection",
   "value": [
     {
@@ -26,31 +26,51 @@
       "idShort": "LicenseModel",
       "modelType": "Property",
       "value": "Subscription",
-      "valueType": "xs:string"
+      "valueType": "xs:string",
+      "semanticId": {
+        "type": "ExternalReference",
+        "keys": [{ "type": "GlobalReference", "value": "https://admin-shell.io/idta/LicensingInformation/LicenseModel/1/0" }]
+      }
     },
     {
       "idShort": "ValidFrom",
       "modelType": "Property",
       "value": "2025-01-01T00:00:00Z",
-      "valueType": "xs:dateTime"
+      "valueType": "xs:dateTime",
+      "semanticId": {
+        "type": "ExternalReference",
+        "keys": [{ "type": "GlobalReference", "value": "https://iso.org/19770-3/ValidityPeriod/Start" }]
+      }
     },
     {
       "idShort": "ValidUntil",
       "modelType": "Property",
       "value": "2026-12-31T23:59:59Z",
-      "valueType": "xs:dateTime"
+      "valueType": "xs:dateTime",
+      "semanticId": {
+        "type": "ExternalReference",
+        "keys": [{ "type": "GlobalReference", "value": "https://iso.org/19770-3/ValidityPeriod/End" }]
+      }
     },
     {
       "idShort": "MaxConcurrentUsers",
       "modelType": "Property",
       "value": 50,
-      "valueType": "xs:int"
+      "valueType": "xs:int",
+      "semanticId": {
+        "type": "ExternalReference",
+        "keys": [{ "type": "GlobalReference", "value": "https://iso.org/19770-3/Entitlement/Quantity" }]
+      }
     },
     {
       "idShort": "UsageQuota",
       "modelType": "Property",
       "value": 1000000.0,
-      "valueType": "xs:double"
+      "valueType": "xs:double",
+      "semanticId": {
+        "type": "ExternalReference",
+        "keys": [{ "type": "GlobalReference", "value": "https://iso.org/19770-3/Entitlement/Metric/Quantity" }]
+      }
     },
     {
       "idShort": "UsageUnit",
@@ -61,11 +81,11 @@
     {
       "idShort": "ActivationKey",
       "modelType": "Property",
-      "value": "X7K9-M4P2-VN8T-QW3R",
+      "value": "X7K9-M4P2-VN8T-QW3R-ENT-2025",
       "valueType": "xs:string",
       "semanticId": {
         "type": "ExternalReference",
-        "keys": [{ "type": "GlobalReference", "value": "https://admin-shell.io/idta/LicensingInformation/ActivationKey/1/0" }]
+        "keys": [{ "type": "GlobalReference", "value": "https://iso.org/19770-3/EntitlementIdentifier" }]
       }
     },
     {
@@ -73,7 +93,11 @@
       "modelType": "MultiLanguageProperty",
       "value": [
         { "language": "en", "text": "Production" }
-      ]
+      ],
+      "semanticId": {
+        "type": "ExternalReference",
+        "keys": [{ "type": "GlobalReference", "value": "https://iso.org/19770-3/Entitlement/Rights/Scope" }]
+      }
     },
     {
       "idShort": "UpgradeEligibility",
@@ -94,13 +118,17 @@
         {
           "idShort": "GeographicRestriction",
           "modelType": "Property",
-          "value": "EU + USA",
-          "valueType": "xs:string"
+          "value": "EU + Switzerland",
+          "valueType": "xs:string",
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [{ "type": "GlobalReference", "value": "https://iso.org/19770-3/Entitlement/Limitation/Geographic" }]
+          }
         },
         {
           "idShort": "HardwareBinding",
           "modelType": "Property",
-          "value": "Bound to specific hardware ID",
+          "value": "Bound to specific hardware fingerprint",
           "valueType": "xs:string"
         }
       ]
@@ -108,7 +136,7 @@
     {
       "idShort": "ComplianceCertificates",
       "modelType": "File",
-      "value": "/certificates/SOC2_Report_2025.pdf",
+      "value": "certificates/SOC2_Report_Q1_2025.pdf",
       "contentType": "application/pdf"
     }
   ]

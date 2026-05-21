@@ -1,0 +1,111 @@
+{
+  "semanticId": {
+    "type": "ExternalReference",
+    "keys": [
+      {
+        "type": "GlobalReference",
+        "value": "https://admin-shell.io/idta/LicensingInformation/1/0"
+      }
+    ]
+  },
+  "idShort": "LicensingInformation",
+  "modelType": "SubmodelElementCollection",
+  "value": [
+    {
+      "idShort": "LicenseType",
+      "modelType": "MultiLanguageProperty",
+      "value": [
+        { "language": "en", "text": "Apache-2.0" },
+        { "language": "de", "text": "Apache-2.0" }
+      ],
+      "semanticId": {
+        "type": "ExternalReference",
+        "keys": [{ "type": "GlobalReference", "value": "https://spdx.org/licenses/Apache-2.0" }]
+      }
+    },
+    {
+      "idShort": "LicenseModel",
+      "modelType": "Property",
+      "value": "Subscription",
+      "valueType": "xs:string",
+      "semanticId": {
+        "type": "ExternalReference",
+        "keys": [{ "type": "GlobalReference", "value": "https://admin-shell.io/idta/LicensingInformation/LicenseModel/1/0" }]
+      }
+    },
+    {
+      "idShort": "ValidFrom",
+      "modelType": "Property",
+      "value": "2025-01-01T00:00:00Z",
+      "valueType": "xs:dateTime"
+    },
+    {
+      "idShort": "ValidUntil",
+      "modelType": "Property",
+      "value": "2026-12-31T23:59:59Z",
+      "valueType": "xs:dateTime"
+    },
+    {
+      "idShort": "MaxConcurrentUsers",
+      "modelType": "Property",
+      "value": 50,
+      "valueType": "xs:int"
+    },
+    {
+      "idShort": "UsageQuota",
+      "modelType": "Property",
+      "value": 1000000,
+      "valueType": "xs:double"
+    },
+    {
+      "idShort": "UsageUnit",
+      "modelType": "Property",
+      "value": "API calls per month",
+      "valueType": "xs:string"
+    },
+    {
+      "idShort": "LicenseScope",
+      "modelType": "MultiLanguageProperty",
+      "value": [
+        { "language": "en", "text": "Production" },
+        { "language": "de", "text": "Produktion" }
+      ]
+    },
+    {
+      "idShort": "UpgradeEligibility",
+      "modelType": "Property",
+      "value": true,
+      "valueType": "xs:boolean"
+    },
+    {
+      "idShort": "AutoRenewal",
+      "modelType": "Property",
+      "value": true,
+      "valueType": "xs:boolean"
+    },
+    {
+      "idShort": "LicenseRestrictions",
+      "modelType": "SubmodelElementCollection",
+      "value": [
+        {
+          "idShort": "GeographicRestriction",
+          "modelType": "Property",
+          "value": "EU only",
+          "valueType": "xs:string"
+        },
+        {
+          "idShort": "HardwareBinding",
+          "modelType": "Property",
+          "value": "Specific MAC addresses only",
+          "valueType": "xs:string"
+        }
+      ]
+    },
+    {
+      "idShort": "ComplianceCertificates",
+      "modelType": "File",
+      "value": "SOC2_Report_2025.pdf",
+      "contentType": "application/pdf"
+    }
+  ]
+}

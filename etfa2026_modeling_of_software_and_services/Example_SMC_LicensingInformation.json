@@ -33,16 +33,34 @@
       "value": "One"
     }
   ],
+  "modelType": "SubmodelElementCollection",
   "value": [
     {
       "category": "PARAMETER",
       "idShort": "LicenseType",
       "displayName": [
-        { "language": "de", "text": "Lizenztyp" },
-        { "language": "en", "text": "License Type" }
+        {
+          "language": "de",
+          "text": "Lizenztyp"
+        },
+        {
+          "language": "en",
+          "text": "License Type"
+        }
       ],
       "description": [
-        { "language": "en", "text": "License type according to SPDX" }
+        {
+          "language": "en",
+          "text": "License type according to SPDX"
+        }
+      ],
+      "qualifiers": [
+        {
+          "kind": "ConceptQualifier",
+          "type": "Multiplicity",
+          "valueType": "xs:string",
+          "value": "One"
+        }
       ],
       "semanticId": {
         "type": "ExternalReference",
@@ -53,14 +71,6 @@
           }
         ]
       },
-      "qualifiers": [
-        {
-          "kind": "ConceptQualifier",
-          "type": "Multiplicity",
-          "valueType": "xs:string",
-          "value": "One"
-        }
-      ],
       "valueType": "xs:string",
       "value": "Apache-2.0",
       "modelType": "Property"
@@ -69,8 +79,28 @@
       "category": "PARAMETER",
       "idShort": "LicenseModel",
       "displayName": [
-        { "language": "de", "text": "Lizenzmodell" },
-        { "language": "en", "text": "License Model" }
+        {
+          "language": "de",
+          "text": "Lizenzmodell"
+        },
+        {
+          "language": "en",
+          "text": "License Model"
+        }
+      ],
+      "description": [
+        {
+          "language": "en",
+          "text": "Commercial licensing model"
+        }
+      ],
+      "qualifiers": [
+        {
+          "kind": "ConceptQualifier",
+          "type": "Multiplicity",
+          "valueType": "xs:string",
+          "value": "ZeroToOne"
+        }
       ],
       "semanticId": {
         "type": "ExternalReference",
@@ -81,14 +111,6 @@
           }
         ]
       },
-      "qualifiers": [
-        {
-          "kind": "ConceptQualifier",
-          "type": "Multiplicity",
-          "valueType": "xs:string",
-          "value": "ZeroToOne"
-        }
-      ],
       "valueType": "xs:string",
       "value": "Subscription",
       "modelType": "Property"
@@ -97,8 +119,28 @@
       "category": "PARAMETER",
       "idShort": "ValidFrom",
       "displayName": [
-        { "language": "de", "text": "Gültig ab" },
-        { "language": "en", "text": "Valid From" }
+        {
+          "language": "de",
+          "text": "Gültig ab"
+        },
+        {
+          "language": "en",
+          "text": "Valid From"
+        }
+      ],
+      "description": [
+        {
+          "language": "en",
+          "text": "Start of license validity"
+        }
+      ],
+      "qualifiers": [
+        {
+          "kind": "ConceptQualifier",
+          "type": "Multiplicity",
+          "valueType": "xs:string",
+          "value": "ZeroToOne"
+        }
       ],
       "semanticId": {
         "type": "ExternalReference",
@@ -109,14 +151,6 @@
           }
         ]
       },
-      "qualifiers": [
-        {
-          "kind": "ConceptQualifier",
-          "type": "Multiplicity",
-          "valueType": "xs:string",
-          "value": "ZeroToOne"
-        }
-      ],
       "valueType": "xs:dateTime",
       "value": "2025-01-01T00:00:00Z",
       "modelType": "Property"
@@ -125,8 +159,28 @@
       "category": "PARAMETER",
       "idShort": "ValidUntil",
       "displayName": [
-        { "language": "de", "text": "Gültig bis" },
-        { "language": "en", "text": "Valid Until" }
+        {
+          "language": "de",
+          "text": "Gültig bis"
+        },
+        {
+          "language": "en",
+          "text": "Valid Until"
+        }
+      ],
+      "description": [
+        {
+          "language": "en",
+          "text": "End of license validity (null = perpetual)"
+        }
+      ],
+      "qualifiers": [
+        {
+          "kind": "ConceptQualifier",
+          "type": "Multiplicity",
+          "valueType": "xs:string",
+          "value": "ZeroToOne"
+        }
       ],
       "semanticId": {
         "type": "ExternalReference",
@@ -137,14 +191,6 @@
           }
         ]
       },
-      "qualifiers": [
-        {
-          "kind": "ConceptQualifier",
-          "type": "Multiplicity",
-          "valueType": "xs:string",
-          "value": "ZeroToOne"
-        }
-      ],
       "valueType": "xs:dateTime",
       "value": "2026-12-31T23:59:59Z",
       "modelType": "Property"
@@ -153,8 +199,22 @@
       "category": "PARAMETER",
       "idShort": "MaxConcurrentUsers",
       "displayName": [
-        { "language": "de", "text": "Maximale gleichzeitige Benutzer" },
-        { "language": "en", "text": "Max Concurrent Users" }
+        {
+          "language": "de",
+          "text": "Maximale gleichzeitige Benutzer"
+        },
+        {
+          "language": "en",
+          "text": "Max Concurrent Users"
+        }
+      ],
+      "qualifiers": [
+        {
+          "kind": "ConceptQualifier",
+          "type": "Multiplicity",
+          "valueType": "xs:string",
+          "value": "ZeroToOne"
+        }
       ],
       "semanticId": {
         "type": "ExternalReference",
@@ -165,6 +225,23 @@
           }
         ]
       },
+      "valueType": "xs:int",
+      "value": "50",
+      "modelType": "Property"
+    },
+    {
+      "category": "PARAMETER",
+      "idShort": "UsageQuota",
+      "displayName": [
+        {
+          "language": "de",
+          "text": "Nutzungskontingent"
+        },
+        {
+          "language": "en",
+          "text": "Usage Quota"
+        }
+      ],
       "qualifiers": [
         {
           "kind": "ConceptQualifier",
@@ -173,16 +250,73 @@
           "value": "ZeroToOne"
         }
       ],
-      "valueType": "xs:int",
-      "value": "50",
+      "semanticId": {
+        "type": "ExternalReference",
+        "keys": [
+          {
+            "type": "GlobalReference",
+            "value": "https://admin-shell.io/idta/LicensingInformation/UsageQuota/1/0"
+          }
+        ]
+      },
+      "valueType": "xs:double",
+      "value": "1000000.0",
+      "modelType": "Property"
+    },
+    {
+      "category": "PARAMETER",
+      "idShort": "UsageUnit",
+      "displayName": [
+        {
+          "language": "de",
+          "text": "Nutzungseinheit"
+        },
+        {
+          "language": "en",
+          "text": "Usage Unit"
+        }
+      ],
+      "qualifiers": [
+        {
+          "kind": "ConceptQualifier",
+          "type": "Multiplicity",
+          "valueType": "xs:string",
+          "value": "ZeroToOne"
+        }
+      ],
+      "semanticId": {
+        "type": "ExternalReference",
+        "keys": [
+          {
+            "type": "GlobalReference",
+            "value": "https://admin-shell.io/idta/LicensingInformation/UsageUnit/1/0"
+          }
+        ]
+      },
+      "valueType": "xs:string",
+      "value": "API calls per month",
       "modelType": "Property"
     },
     {
       "category": "PARAMETER",
       "idShort": "ActivationKey",
       "displayName": [
-        { "language": "de", "text": "Aktivierungsschlüssel" },
-        { "language": "en", "text": "Activation Key" }
+        {
+          "language": "de",
+          "text": "Aktivierungsschlüssel"
+        },
+        {
+          "language": "en",
+          "text": "Activation Key"
+        }
+      ],
+      "qualifiers": [
+        {
+          "kind": "ConceptQualifier",
+          "type": "Multiplicity",
+          "valueType": "xs:string",
+          "value": "ZeroToOne"
+        }
       ],
       "semanticId": {
         "type": "ExternalReference",
@@ -190,6 +324,133 @@
           {
             "type": "GlobalReference",
             "value": "https://admin-shell.io/idta/LicensingInformation/ActivationKey/1/0"
+          }
+        ]
+      },
+      "valueType": "xs:string",
+      "value": "X7K9-M4P2-VN8T-QW3R-ENT-2025",
+      "modelType": "Property"
+    },
+    {
+      "category": "PARAMETER",
+      "idShort": "LicenseScope",
+      "displayName": [
+        {
+          "language": "de",
+          "text": "Lizenzumfang"
+        },
+        {
+          "language": "en",
+          "text": "License Scope"
+        }
+      ],
+      "qualifiers": [
+        {
+          "kind": "ConceptQualifier",
+          "type": "Multiplicity",
+          "valueType": "xs:string",
+          "value": "ZeroToOne"
+        }
+      ],
+      "semanticId": {
+        "type": "ExternalReference",
+        "keys": [
+          {
+            "type": "GlobalReference",
+            "value": "https://admin-shell.io/idta/LicensingInformation/LicenseScope/1/0"
+          }
+        ]
+      },
+      "valueType": "xs:string",
+      "value": "Production",
+      "modelType": "Property"
+    },
+    {
+      "category": "PARAMETER",
+      "idShort": "UpgradeEligibility",
+      "displayName": [
+        {
+          "language": "de",
+          "text": "Upgrade-Berechtigung"
+        },
+        {
+          "language": "en",
+          "text": "Upgrade Eligibility"
+        }
+      ],
+      "qualifiers": [
+        {
+          "kind": "ConceptQualifier",
+          "type": "Multiplicity",
+          "valueType": "xs:string",
+          "value": "ZeroToOne"
+        }
+      ],
+      "semanticId": {
+        "type": "ExternalReference",
+        "keys": [
+          {
+            "type": "GlobalReference",
+            "value": "https://admin-shell.io/idta/LicensingInformation/UpgradeEligibility/1/0"
+          }
+        ]
+      },
+      "valueType": "xs:boolean",
+      "value": "true",
+      "modelType": "Property"
+    },
+    {
+      "category": "PARAMETER",
+      "idShort": "AutoRenewal",
+      "displayName": [
+        {
+          "language": "de",
+          "text": "Automatische Verlängerung"
+        },
+        {
+          "language": "en",
+          "text": "Auto Renewal"
+        }
+      ],
+      "qualifiers": [
+        {
+          "kind": "ConceptQualifier",
+          "type": "Multiplicity",
+          "valueType": "xs:string",
+          "value": "ZeroToOne"
+        }
+      ],
+      "semanticId": {
+        "type": "ExternalReference",
+        "keys": [
+          {
+            "type": "GlobalReference",
+            "value": "https://admin-shell.io/idta/LicensingInformation/AutoRenewal/1/0"
+          }
+        ]
+      },
+      "valueType": "xs:boolean",
+      "value": "true",
+      "modelType": "Property"
+    },
+    {
+      "idShort": "LicenseRestrictions",
+      "displayName": [
+        {
+          "language": "de",
+          "text": "Lizenzbeschränkungen"
+        },
+        {
+          "language": "en",
+          "text": "License Restrictions"
+        }
+      ],
+      "semanticId": {
+        "type": "ExternalReference",
+        "keys": [
+          {
+            "type": "GlobalReference",
+            "value": "https://admin-shell.io/idta/LicensingInformation/LicenseRestrictions/1/0"
           }
         ]
       },
@@ -201,10 +462,102 @@
           "value": "ZeroToOne"
         }
       ],
-      "valueType": "xs:string",
-      "value": "X7K9-M4P2-VN8T-QW3R-ENT-2025",
-      "modelType": "Property"
+      "modelType": "SubmodelElementCollection",
+      "value": [
+        {
+          "category": "PARAMETER",
+          "idShort": "GeographicRestriction",
+          "displayName": [
+            {
+              "language": "en",
+              "text": "Geographic Restriction"
+            }
+          ],
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/idta/LicensingInformation/LicenseRestrictions/GeographicRestriction/1/0"
+              }
+            ]
+          },
+          "qualifiers": [
+            {
+              "kind": "ConceptQualifier",
+              "type": "Multiplicity",
+              "valueType": "xs:string",
+              "value": "ZeroToOne"
+            }
+          ],
+          "valueType": "xs:string",
+          "value": "EU + Switzerland",
+          "modelType": "Property"
+        },
+        {
+          "category": "PARAMETER",
+          "idShort": "HardwareBinding",
+          "displayName": [
+            {
+              "language": "en",
+              "text": "Hardware Binding"
+            }
+          ],
+          "semanticId": {
+            "type": "ExternalReference",
+            "keys": [
+              {
+                "type": "GlobalReference",
+                "value": "https://admin-shell.io/idta/LicensingInformation/LicenseRestrictions/HardwareBinding/1/0"
+              }
+            ]
+          },
+          "qualifiers": [
+            {
+              "kind": "ConceptQualifier",
+              "type": "Multiplicity",
+              "valueType": "xs:string",
+              "value": "ZeroToOne"
+            }
+          ],
+          "valueType": "xs:string",
+          "value": "Bound to specific hardware fingerprint",
+          "modelType": "Property"
+        }
+      ]
+    },
+    {
+      "idShort": "ComplianceCertificates",
+      "displayName": [
+        {
+          "language": "de",
+          "text": "Konformitätszertifikate"
+        },
+        {
+          "language": "en",
+          "text": "Compliance Certificates"
+        }
+      ],
+      "semanticId": {
+        "type": "ExternalReference",
+        "keys": [
+          {
+            "type": "GlobalReference",
+            "value": "https://admin-shell.io/idta/LicensingInformation/ComplianceCertificates/1/0"
+          }
+        ]
+      },
+      "qualifiers": [
+        {
+          "kind": "ConceptQualifier",
+          "type": "Multiplicity",
+          "valueType": "xs:string",
+          "value": "ZeroToOne"
+        }
+      ],
+      "contentType": "application/pdf",
+      "value": "/certificates/SOC2_Report_Q1_2025.pdf",
+      "modelType": "File"
     }
-  ],
-  "modelType": "SubmodelElementCollection"
+  ]
 }

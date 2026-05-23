@@ -1,5 +1,21 @@
 {
   "idShort": "LicensingInformation",
+  "displayName": [
+    {
+      "language": "de",
+      "text": "Lizenzinformationen"
+    },
+    {
+      "language": "en",
+      "text": "Licensing Information"
+    }
+  ],
+  "description": [
+    {
+      "language": "en",
+      "text": "Standardized collection for machine-readable licensing information of software products and services"
+    }
+  ],
   "semanticId": {
     "type": "ExternalReference",
     "keys": [
@@ -9,135 +25,189 @@
       }
     ]
   },
-  "modelType": "SubmodelElementCollection",
+  "qualifiers": [
+    {
+      "kind": "ConceptQualifier",
+      "type": "Multiplicity",
+      "valueType": "xs:string"
+    }
+  ],
   "value": [
     {
+      "category": "PARAMETER",
       "idShort": "LicenseType",
-      "modelType": "MultiLanguageProperty",
-      "value": [
-        { "language": "en", "text": "Apache-2.0" }
+      "displayName": [
+        { "language": "de", "text": "Lizenztyp" },
+        { "language": "en", "text": "License Type" }
+      ],
+      "description": [
+        { "language": "en", "text": "License type according to SPDX" }
       ],
       "semanticId": {
         "type": "ExternalReference",
-        "keys": [{ "type": "GlobalReference", "value": "https://spdx.org/licenses/Apache-2.0" }]
-      }
+        "keys": [
+          { "type": "GlobalReference", "value": "https://spdx.org/licenses/" }
+        ]
+      },
+      "valueType": "xs:string",
+      "value": "Apache-2.0",
+      "modelType": "Property"
     },
     {
+      "category": "PARAMETER",
       "idShort": "LicenseModel",
-      "modelType": "Property",
-      "value": "Subscription",
-      "valueType": "xs:string",
-      "semanticId": {
-        "type": "ExternalReference",
-        "keys": [{ "type": "GlobalReference", "value": "https://admin-shell.io/idta/LicensingInformation/LicenseModel/1/0" }]
-      }
-    },
-    {
-      "idShort": "ValidFrom",
-      "modelType": "Property",
-      "value": "2025-01-01T00:00:00Z",
-      "valueType": "xs:dateTime",
-      "semanticId": {
-        "type": "ExternalReference",
-        "keys": [{ "type": "GlobalReference", "value": "https://iso.org/19770-3/ValidityPeriod/Start" }]
-      }
-    },
-    {
-      "idShort": "ValidUntil",
-      "modelType": "Property",
-      "value": "2026-12-31T23:59:59Z",
-      "valueType": "xs:dateTime",
-      "semanticId": {
-        "type": "ExternalReference",
-        "keys": [{ "type": "GlobalReference", "value": "https://iso.org/19770-3/ValidityPeriod/End" }]
-      }
-    },
-    {
-      "idShort": "MaxConcurrentUsers",
-      "modelType": "Property",
-      "value": 50,
-      "valueType": "xs:int",
-      "semanticId": {
-        "type": "ExternalReference",
-        "keys": [{ "type": "GlobalReference", "value": "https://iso.org/19770-3/Entitlement/Quantity" }]
-      }
-    },
-    {
-      "idShort": "UsageQuota",
-      "modelType": "Property",
-      "value": 1000000.0,
-      "valueType": "xs:double",
-      "semanticId": {
-        "type": "ExternalReference",
-        "keys": [{ "type": "GlobalReference", "value": "https://iso.org/19770-3/Entitlement/Metric/Quantity" }]
-      }
-    },
-    {
-      "idShort": "UsageUnit",
-      "modelType": "Property",
-      "value": "API calls per month",
-      "valueType": "xs:string"
-    },
-    {
-      "idShort": "ActivationKey",
-      "modelType": "Property",
-      "value": "X7K9-M4P2-VN8T-QW3R-ENT-2025",
-      "valueType": "xs:string",
-      "semanticId": {
-        "type": "ExternalReference",
-        "keys": [{ "type": "GlobalReference", "value": "https://iso.org/19770-3/EntitlementIdentifier" }]
-      }
-    },
-    {
-      "idShort": "LicenseScope",
-      "modelType": "MultiLanguageProperty",
-      "value": [
-        { "language": "en", "text": "Production" }
+      "displayName": [
+        { "language": "de", "text": "Lizenzmodell" },
+        { "language": "en", "text": "License Model" }
+      ],
+      "description": [
+        { "language": "en", "text": "Commercial licensing model" }
       ],
       "semanticId": {
         "type": "ExternalReference",
-        "keys": [{ "type": "GlobalReference", "value": "https://iso.org/19770-3/Entitlement/Rights/Scope" }]
-      }
+        "keys": [
+          { "type": "GlobalReference", "value": "https://admin-shell.io/idta/LicensingInformation/LicenseModel/1/0" }
+        ]
+      },
+      "valueType": "xs:string",
+      "value": "Subscription",
+      "modelType": "Property"
     },
     {
+      "category": "PARAMETER",
+      "idShort": "ValidFrom",
+      "displayName": [
+        { "language": "de", "text": "Gültig ab" },
+        { "language": "en", "text": "Valid From" }
+      ],
+      "description": [
+        { "language": "en", "text": "Start of license validity" }
+      ],
+      "semanticId": {
+        "type": "ExternalReference",
+        "keys": [
+          { "type": "GlobalReference", "value": "https://iso.org/19770-3/ValidityPeriod/Start" }
+        ]
+      },
+      "valueType": "xs:dateTime",
+      "value": "2025-01-01T00:00:00Z",
+      "modelType": "Property"
+    },
+    {
+      "category": "PARAMETER",
+      "idShort": "ValidUntil",
+      "displayName": [
+        { "language": "de", "text": "Gültig bis" },
+        { "language": "en", "text": "Valid Until" }
+      ],
+      "description": [
+        { "language": "en", "text": "End of license validity (null = perpetual)" }
+      ],
+      "semanticId": {
+        "type": "ExternalReference",
+        "keys": [
+          { "type": "GlobalReference", "value": "https://iso.org/19770-3/ValidityPeriod/End" }
+        ]
+      },
+      "valueType": "xs:dateTime",
+      "value": "2026-12-31T23:59:59Z",
+      "modelType": "Property"
+    },
+    {
+      "category": "PARAMETER",
+      "idShort": "MaxConcurrentUsers",
+      "displayName": [
+        { "language": "de", "text": "Maximale gleichzeitige Benutzer" },
+        { "language": "en", "text": "Max Concurrent Users" }
+      ],
+      "semanticId": {
+        "type": "ExternalReference",
+        "keys": [
+          { "type": "GlobalReference", "value": "https://iso.org/19770-3/Entitlement/Quantity" }
+        ]
+      },
+      "valueType": "xs:int",
+      "value": 50,
+      "modelType": "Property"
+    },
+    {
+      "category": "PARAMETER",
+      "idShort": "UsageQuota",
+      "displayName": [
+        { "language": "de", "text": "Nutzungskontingent" },
+        { "language": "en", "text": "Usage Quota" }
+      ],
+      "semanticId": {
+        "type": "ExternalReference",
+        "keys": [
+          { "type": "GlobalReference", "value": "https://iso.org/19770-3/Entitlement/Metric/Quantity" }
+        ]
+      },
+      "valueType": "xs:double",
+      "value": 1000000.0,
+      "modelType": "Property"
+    },
+    {
+      "category": "PARAMETER",
+      "idShort": "UsageUnit",
+      "displayName": [
+        { "language": "de", "text": "Nutzungseinheit" },
+        { "language": "en", "text": "Usage Unit" }
+      ],
+      "valueType": "xs:string",
+      "value": "API calls per month",
+      "modelType": "Property"
+    },
+    {
+      "category": "PARAMETER",
+      "idShort": "ActivationKey",
+      "displayName": [
+        { "language": "de", "text": "Aktivierungsschlüssel" },
+        { "language": "en", "text": "Activation Key" }
+      ],
+      "semanticId": {
+        "type": "ExternalReference",
+        "keys": [
+          { "type": "GlobalReference", "value": "https://iso.org/19770-3/EntitlementIdentifier" }
+        ]
+      },
+      "valueType": "xs:string",
+      "value": "X7K9-M4P2-VN8T-QW3R-ENT-2025",
+      "modelType": "Property"
+    },
+    {
+      "category": "PARAMETER",
+      "idShort": "LicenseScope",
+      "displayName": [
+        { "language": "de", "text": "Lizenzumfang" },
+        { "language": "en", "text": "License Scope" }
+      ],
+      "valueType": "xs:string",
+      "value": "Production",
+      "modelType": "Property"
+    },
+    {
+      "category": "PARAMETER",
       "idShort": "UpgradeEligibility",
-      "modelType": "Property",
+      "displayName": [
+        { "language": "de", "text": "Upgrade-Berechtigung" },
+        { "language": "en", "text": "Upgrade Eligibility" }
+      ],
+      "valueType": "xs:boolean",
       "value": true,
-      "valueType": "xs:boolean"
+      "modelType": "Property"
     },
     {
+      "category": "PARAMETER",
       "idShort": "AutoRenewal",
-      "modelType": "Property",
+      "displayName": [
+        { "language": "de", "text": "Automatische Verlängerung" },
+        { "language": "en", "text": "Auto Renewal" }
+      ],
+      "valueType": "xs:boolean",
       "value": true,
-      "valueType": "xs:boolean"
-    },
-    {
-      "idShort": "LicenseRestrictions",
-      "modelType": "SubmodelElementCollection",
-      "value": [
-        {
-          "idShort": "GeographicRestriction",
-          "modelType": "Property",
-          "value": "EU + Switzerland",
-          "valueType": "xs:string",
-          "semanticId": {
-            "type": "ExternalReference",
-            "keys": [{ "type": "GlobalReference", "value": "https://iso.org/19770-3/Entitlement/Limitation/Geographic" }]
-          }
-        },
-        {
-          "idShort": "HardwareBinding",
-          "modelType": "Property",
-          "value": "Bound to specific hardware fingerprint",
-          "valueType": "xs:string"
-        }
-      ]
-    },
-    {
-      "idShort": "ComplianceCertificates",
-      "modelType": "File",
-      "value": "certificates/SOC2_Report_Q1_2025.pdf",
-      "contentType": "application/pdf"
+      "modelType": "Property"
     }
-  ]
+  ],
+  "modelType": "SubmodelElementCollection"
 }

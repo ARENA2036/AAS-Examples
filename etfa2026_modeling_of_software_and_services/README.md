@@ -33,6 +33,8 @@ The Asset Administration Shell is the leading standard for digital twins in Indu
 - Uses **SPDX license identifiers** (best practice)
 - Realistic commercial / SaaS licensing example
 - Ready to embed in Technical Data, Software Nameplate, or dedicated Service AAS
+<img width="1495" height="1695" alt="image" src="https://github.com/user-attachments/assets/e766fdf9-a5ed-4184-bac7-b04fb8907230" />
+
 
 ### 3. Service Modeling
 - Demonstrates how to model **digital services** as AAS assets

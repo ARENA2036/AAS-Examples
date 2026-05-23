@@ -29,7 +29,8 @@
     {
       "kind": "ConceptQualifier",
       "type": "Multiplicity",
-      "valueType": "xs:string"
+      "valueType": "xs:string",
+      "value": "One"
     }
   ],
   "value": [
@@ -46,14 +47,18 @@
       "semanticId": {
         "type": "ExternalReference",
         "keys": [
-          { "type": "GlobalReference", "value": "https://spdx.org/licenses/" }
+          {
+            "type": "GlobalReference",
+            "value": "https://admin-shell.io/idta/LicensingInformation/LicenseType/1/0"
+          }
         ]
       },
       "qualifiers": [
         {
           "kind": "ConceptQualifier",
           "type": "Multiplicity",
-          "valueType": "xs:string"
+          "valueType": "xs:string",
+          "value": "One"
         }
       ],
       "valueType": "xs:string",
@@ -70,14 +75,18 @@
       "semanticId": {
         "type": "ExternalReference",
         "keys": [
-          { "type": "GlobalReference", "value": "https://admin-shell.io/idta/LicensingInformation/LicenseModel/1/0" }
+          {
+            "type": "GlobalReference",
+            "value": "https://admin-shell.io/idta/LicensingInformation/LicenseModel/1/0"
+          }
         ]
       },
       "qualifiers": [
         {
           "kind": "ConceptQualifier",
           "type": "Multiplicity",
-          "valueType": "xs:string"
+          "valueType": "xs:string",
+          "value": "ZeroToOne"
         }
       ],
       "valueType": "xs:string",
@@ -94,14 +103,18 @@
       "semanticId": {
         "type": "ExternalReference",
         "keys": [
-          { "type": "GlobalReference", "value": "https://iso.org/19770-3/ValidityPeriod/Start" }
+          {
+            "type": "GlobalReference",
+            "value": "https://admin-shell.io/idta/LicensingInformation/ValidFrom/1/0"
+          }
         ]
       },
       "qualifiers": [
         {
           "kind": "ConceptQualifier",
           "type": "Multiplicity",
-          "valueType": "xs:string"
+          "valueType": "xs:string",
+          "value": "ZeroToOne"
         }
       ],
       "valueType": "xs:dateTime",
@@ -118,14 +131,18 @@
       "semanticId": {
         "type": "ExternalReference",
         "keys": [
-          { "type": "GlobalReference", "value": "https://iso.org/19770-3/ValidityPeriod/End" }
+          {
+            "type": "GlobalReference",
+            "value": "https://admin-shell.io/idta/LicensingInformation/ValidUntil/1/0"
+          }
         ]
       },
       "qualifiers": [
         {
           "kind": "ConceptQualifier",
           "type": "Multiplicity",
-          "valueType": "xs:string"
+          "valueType": "xs:string",
+          "value": "ZeroToOne"
         }
       ],
       "valueType": "xs:dateTime",
@@ -142,18 +159,22 @@
       "semanticId": {
         "type": "ExternalReference",
         "keys": [
-          { "type": "GlobalReference", "value": "https://iso.org/19770-3/Entitlement/Quantity" }
+          {
+            "type": "GlobalReference",
+            "value": "https://admin-shell.io/idta/LicensingInformation/MaxConcurrentUsers/1/0"
+          }
         ]
       },
       "qualifiers": [
         {
           "kind": "ConceptQualifier",
           "type": "Multiplicity",
-          "valueType": "xs:string"
+          "valueType": "xs:string",
+          "value": "ZeroToOne"
         }
       ],
       "valueType": "xs:int",
-      "value": 50,
+      "value": "50",
       "modelType": "Property"
     },
     {
@@ -166,14 +187,18 @@
       "semanticId": {
         "type": "ExternalReference",
         "keys": [
-          { "type": "GlobalReference", "value": "https://iso.org/19770-3/EntitlementIdentifier" }
+          {
+            "type": "GlobalReference",
+            "value": "https://admin-shell.io/idta/LicensingInformation/ActivationKey/1/0"
+          }
         ]
       },
       "qualifiers": [
         {
           "kind": "ConceptQualifier",
           "type": "Multiplicity",
-          "valueType": "xs:string"
+          "valueType": "xs:string",
+          "value": "ZeroToOne"
         }
       ],
       "valueType": "xs:string",

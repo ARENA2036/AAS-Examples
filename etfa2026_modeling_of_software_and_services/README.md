@@ -1,6 +1,6 @@
 # ETFA 2026: Modeling of Software and Services with Asset Administration Shell (AAS)
 
-This folder contains **examples and reference implementations** developed for the ETFA 2026 paper on modeling software products and digital services using the [Asset Administration Shell (AAS)](https://industrialdigitaltwin.org/).
+This folder contains **examples and reference implementations** developed for the ETFA 2026 paper on modeling software products and services using the [Asset Administration Shell (AAS)](https://industrialdigitaltwin.org/).
 
 ## Overview
 
@@ -8,7 +8,7 @@ The Asset Administration Shell is the leading standard for digital twins in Indu
 
 - **Software products** (using the upgraded IDTA Software Nameplate + Licensing + Technical Data)
 - **Licensing information** aligned with ISO/IEC 19770-3
-- **Digital services** offered by assets
+- **Services** offered by assets
 - Complete AAS suites combining multiple submodels
 
 ## 📁 Contents
@@ -16,7 +16,7 @@ The Asset Administration Shell is the leading standard for digital twins in Indu
 | File | Description |
 |------|-------------|
 | **`AAS_SUITE.aasx`** / **`AAS_SUITE.json`** | Complete AAS example combining Software Nameplate, Licensing, and Service submodels |
-| **`ServiceExample.aasx`** / **`ServiceExample.json`** | Standalone example of a digital service modeled as an AAS |
+| **`ServiceExample.aasx`** / **`ServiceExample.json`** | Standalone example of a service modeled as an AAS |
 | **`SM_SoftwareNameplate_with LicensingInformation.json`** | Software Nameplate Submodel with integrated Licensing SMC |
 | **`Example_SMC_LicensingInformation.json`** | Reusable SubmodelElementCollection for licensing information |
 
@@ -33,13 +33,15 @@ The Asset Administration Shell is the leading standard for digital twins in Indu
 - Uses **SPDX license identifiers** (best practice)
 - Realistic commercial / SaaS licensing example
 - Ready to embed in Technical Data, Software Nameplate, or dedicated Service AAS
-<img width="1495" height="1695" alt="image" src="https://github.com/user-attachments/assets/e766fdf9-a5ed-4184-bac7-b04fb8907230" />
 
+![](https://github.com/user-attachments/assets/e766fdf9-a5ed-4184-bac7-b04fb8907230)
 
 ### 3. Service Modeling
-- Demonstrates how to model **digital services** as AAS assets
-- Includes service description, endpoints, and capabilities
-- Shows integration patterns between software and service AAS
+- Demonstrates how to model **services** as AAS for digital marketplaces and Manufacturing-as-a-Service
+- Introduces a role concept to reuse and compose existing Submodel-Standards, such as Nameplate, Technical Data and Capabilities
+- Uses the "SMT drop-ins" for domain specific standardization that allow a semantic matching
+- Includes, e.g., identification, condition, offered capabilities or input factors
+- Shows integration patterns between software and service AAS with the role and drop-in concept
 
 ## Usage
 
@@ -55,13 +57,14 @@ The `.json` files follow the official AAS JSON 3.0 serialization and can be used
 For production use we recommend the following patterns:
 
 1. **Software Product AAS** — Contains Software Nameplate + Licensing + Technical Data
-2. **Service AAS** — Represents offered digital services (Type 3 AAS with operations)
+2. **Service AAS** — Represents or required services for the provision or request in digital marketplaces and the use in Manufacturing-as-a-Service.
 3. **Component AAS** — Links to software/services it uses
 
 
 ## Related Standards
 - [IDTA 02006-3-0: Digital Nameplate for Industrial Equipment](https://github.com/admin-shell-io/submodel-templates/tree/main/published/Digital%20nameplate/3/0)
 - [IDTA 02007-1-0: Software Nameplate](https://admin-shell.io/idta/SoftwareNameplate/1/0)
+- [IDTA 02020-1-0: Capability Description](https://industrialdigitaltwin.org/wp-content/uploads/2026/04/IDTA-02020_Submodel_Capability_Description.pdf)
 - ISO/IEC 19770-3 — Software asset management
 - IEC 63278 — Asset Administration Shell
 - SPDX License List

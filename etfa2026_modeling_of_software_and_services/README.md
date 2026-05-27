@@ -34,7 +34,9 @@ The Asset Administration Shell is the leading standard for digital twins in Indu
 - Realistic commercial / SaaS licensing example
 - Ready to embed in Technical Data, Software Nameplate, or dedicated Service AAS
 
-![](https://github.com/user-attachments/assets/e766fdf9-a5ed-4184-bac7-b04fb8907230)
+<img src="https://github.com/user-attachments/assets/e766fdf9-a5ed-4184-bac7-b04fb8907230" 
+     width="60%" 
+     alt="SMC LicensingInformation">
 
 ### 3. Service Modeling
 - Demonstrates how to model **services** as AAS for digital marketplaces and Manufacturing-as-a-Service
@@ -65,13 +67,14 @@ For production use we recommend the following patterns:
 - [IDTA 02006-3-0: Digital Nameplate for Industrial Equipment](https://github.com/admin-shell-io/submodel-templates/tree/main/published/Digital%20nameplate/3/0)
 - [IDTA 02007-1-0: Software Nameplate](https://admin-shell.io/idta/SoftwareNameplate/1/0)
 - [IDTA 02020-1-0: Capability Description](https://industrialdigitaltwin.org/wp-content/uploads/2026/04/IDTA-02020_Submodel_Capability_Description.pdf)
+- [SPDX License List](https://spdx.org/licenses/)
 - ISO/IEC 19770-3 — Software asset management
 - IEC 63278 — Asset Administration Shell
-- SPDX License List
 
 ## Contributing
 
 Contributions, improvements, and additional examples (especially for different licensing models or service types) are welcome.
+Please contact markus.rentschler@arena2036.de
 
 ---
 

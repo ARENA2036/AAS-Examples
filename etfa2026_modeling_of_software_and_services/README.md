@@ -1,6 +1,6 @@
-# ETFA 2026: Modeling of Software and Services with Asset Administration Shell (AAS)
+# Modeling of Software and Services with Asset Administration Shell (AAS)
 
-This folder contains **examples and reference implementations** developed for the ETFA 2026 paper on modeling software products and services using the [Asset Administration Shell (AAS)](https://industrialdigitaltwin.org/).
+This folder contains **examples and reference implementations** developed for the paper on modeling software and service products using the [Asset Administration Shell (AAS)](https://industrialdigitaltwin.org/).
 
 ## Overview
 

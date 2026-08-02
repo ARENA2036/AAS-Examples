@@ -1,0 +1,918 @@
+{
+  "modelType": "SubmodelElementCollection",
+  "idShort": "LicensingInformation",
+  "category": "PARAMETER",
+  "description": [
+    {
+      "language": "en",
+      "text": "Standardized, machine-readable licensing information for a software product or service, combining ISO 19770-3 Entitlement Scheme and OWASP CycloneDX license model properties."
+    }
+  ],
+  "semanticId": {
+    "type": "ExternalReference",
+    "keys": [
+      {
+        "type": "GlobalReference",
+        "value": "https://admin-shell.io/idta/LicensingInformation/1/0"
+      }
+    ]
+  },
+  "value": [
+
+    {
+      "modelType": "MultiLanguageProperty",
+      "idShort": "LicenseType",
+      "description": [
+        {
+          "language": "en",
+          "text": "Type of license, e.g. Perpetual, Subscription, Freemium, OpenSource, Concurrent, Node-Locked."
+        }
+      ],
+      "semanticId": {
+        "type": "ExternalReference",
+        "keys": [
+          {
+            "type": "GlobalReference",
+            "value": "https://admin-shell.io/idta/LicensingInformation/1/0/LicenseType"
+          }
+        ]
+      },
+      "supplementalSemanticIds": [
+        {
+          "type": "ExternalReference",
+          "keys": [
+            {
+              "type": "GlobalReference",
+              "value": "https://www.iso.org/obp/ui/#iso:std:iso-iec:19770:-3:ed-1:v1:en#LicenseType"
+            }
+          ]
+        },
+        {
+          "type": "ExternalReference",
+          "keys": [
+            {
+              "type": "GlobalReference",
+              "value": "https://cyclonedx.org/docs/1.6/json/#components_items_licenses_items_license_licensing_licenseTypes"
+            }
+          ]
+        }
+      ],
+      "value": [
+        { "language": "en", "text": "Subscription" }
+      ]
+    },
+
+    {
+      "modelType": "Property",
+      "idShort": "LicenseModel",
+      "valueType": "xs:string",
+      "description": [
+        {
+          "language": "en",
+          "text": "Further classification of the license, e.g. SingleUser, Enterprise, Pay-per-Use, Seat-based."
+        }
+      ],
+      "semanticId": {
+        "type": "ExternalReference",
+        "keys": [
+          {
+            "type": "GlobalReference",
+            "value": "https://admin-shell.io/idta/LicensingInformation/1/0/LicenseModel"
+          }
+        ]
+      },
+      "supplementalSemanticIds": [
+        {
+          "type": "ExternalReference",
+          "keys": [
+            {
+              "type": "GlobalReference",
+              "value": "https://www.iso.org/obp/ui/#iso:std:iso-iec:19770:-3:ed-1:v1:en#LicenseModel"
+            }
+          ]
+        }
+      ],
+      "value": "Enterprise"
+    },
+
+    {
+      "modelType": "Property",
+      "idShort": "LicenseId",
+      "valueType": "xs:string",
+      "description": [
+        {
+          "language": "en",
+          "text": "SPDX license identifier, if applicable (e.g. Apache-2.0, MIT). Empty if the license is not SPDX-identified."
+        }
+      ],
+      "semanticId": {
+        "type": "ExternalReference",
+        "keys": [
+          {
+            "type": "GlobalReference",
+            "value": "https://admin-shell.io/idta/LicensingInformation/1/0/LicenseId"
+          }
+        ]
+      },
+      "supplementalSemanticIds": [
+        {
+          "type": "ExternalReference",
+          "keys": [
+            {
+              "type": "GlobalReference",
+              "value": "https://cyclonedx.org/docs/1.6/json/#components_items_licenses_items_license_id"
+            }
+          ]
+        }
+      ],
+      "value": ""
+    },
+
+    {
+      "modelType": "MultiLanguageProperty",
+      "idShort": "LicenseName",
+      "description": [
+        {
+          "language": "en",
+          "text": "Name of a non-SPDX or commercial license."
+        }
+      ],
+      "semanticId": {
+        "type": "ExternalReference",
+        "keys": [
+          {
+            "type": "GlobalReference",
+            "value": "https://admin-shell.io/idta/LicensingInformation/1/0/LicenseName"
+          }
+        ]
+      },
+      "supplementalSemanticIds": [
+        {
+          "type": "ExternalReference",
+          "keys": [
+            {
+              "type": "GlobalReference",
+              "value": "https://cyclonedx.org/docs/1.6/json/#components_items_licenses_items_license_name"
+            }
+          ]
+        }
+      ],
+      "value": [
+        { "language": "en", "text": "Acme Corp Enterprise Software License Agreement v3.2" }
+      ]
+    },
+
+    {
+      "modelType": "File",
+      "idShort": "LicenseText",
+      "contentType": "application/pdf",
+      "value": "/aasx/files/LicenseText_AcmeEnterprise_v3.2.pdf",
+      "description": [
+        {
+          "language": "en",
+          "text": "Full license text, embedded or referenced."
+        }
+      ],
+      "semanticId": {
+        "type": "ExternalReference",
+        "keys": [
+          {
+            "type": "GlobalReference",
+            "value": "https://admin-shell.io/idta/LicensingInformation/1/0/LicenseText"
+          }
+        ]
+      },
+      "supplementalSemanticIds": [
+        {
+          "type": "ExternalReference",
+          "keys": [
+            {
+              "type": "GlobalReference",
+              "value": "https://cyclonedx.org/docs/1.6/json/#components_items_licenses_items_license_text"
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "modelType": "Property",
+      "idShort": "LicenseUrl",
+      "valueType": "xs:anyURI",
+      "description": [
+        {
+          "language": "en",
+          "text": "Resolvable reference to the license document."
+        }
+      ],
+      "semanticId": {
+        "type": "ExternalReference",
+        "keys": [
+          {
+            "type": "GlobalReference",
+            "value": "https://admin-shell.io/idta/LicensingInformation/1/0/LicenseUrl"
+          }
+        ]
+      },
+      "supplementalSemanticIds": [
+        {
+          "type": "ExternalReference",
+          "keys": [
+            {
+              "type": "GlobalReference",
+              "value": "https://cyclonedx.org/docs/1.6/json/#components_items_licenses_items_license_url"
+            }
+          ]
+        }
+      ],
+      "value": "https://example.com/licenses/acme-enterprise-v3.2"
+    },
+
+    {
+      "modelType": "Property",
+      "idShort": "LicenseAcknowledgement",
+      "valueType": "xs:string",
+      "description": [
+        {
+          "language": "en",
+          "text": "Indicates whether the license is 'declared' by the supplier or 'concluded' through independent analysis."
+        }
+      ],
+      "semanticId": {
+        "type": "ExternalReference",
+        "keys": [
+          {
+            "type": "GlobalReference",
+            "value": "https://admin-shell.io/idta/LicensingInformation/1/0/LicenseAcknowledgement"
+          }
+        ]
+      },
+      "supplementalSemanticIds": [
+        {
+          "type": "ExternalReference",
+          "keys": [
+            {
+              "type": "GlobalReference",
+              "value": "https://cyclonedx.org/docs/1.6/json/#components_items_licenses_items_license_acknowledgement"
+            }
+          ]
+        }
+      ],
+      "valueId": {
+        "type": "ExternalReference",
+        "keys": [
+          {
+            "type": "GlobalReference",
+            "value": "https://cyclonedx.org/docs/1.6/json/#components_items_licenses_items_license_acknowledgement_enum"
+          }
+        ]
+      },
+      "value": "declared"
+    },
+
+    {
+      "modelType": "Property",
+      "idShort": "ValidFrom",
+      "valueType": "xs:dateTime",
+      "description": [
+        {
+          "language": "en",
+          "text": "Start date of license validity."
+        }
+      ],
+      "semanticId": {
+        "type": "ExternalReference",
+        "keys": [
+          {
+            "type": "GlobalReference",
+            "value": "https://admin-shell.io/idta/LicensingInformation/1/0/ValidFrom"
+          }
+        ]
+      },
+      "supplementalSemanticIds": [
+        {
+          "type": "ExternalReference",
+          "keys": [
+            {
+              "type": "GlobalReference",
+              "value": "https://www.iso.org/obp/ui/#iso:std:iso-iec:19770:-3:ed-1:v1:en#ValidFrom"
+            }
+          ]
+        }
+      ],
+      "value": "2026-01-01T00:00:00Z"
+    },
+
+    {
+      "modelType": "Property",
+      "idShort": "ValidUntil",
+      "valueType": "xs:dateTime",
+      "description": [
+        {
+          "language": "en",
+          "text": "Expiration date of the license. Empty value denotes a perpetual license. Semantically equivalent to CycloneDX licensing.expiration."
+        }
+      ],
+      "semanticId": {
+        "type": "ExternalReference",
+        "keys": [
+          {
+            "type": "GlobalReference",
+            "value": "https://admin-shell.io/idta/LicensingInformation/1/0/ValidUntil"
+          }
+        ]
+      },
+      "supplementalSemanticIds": [
+        {
+          "type": "ExternalReference",
+          "keys": [
+            {
+              "type": "GlobalReference",
+              "value": "https://www.iso.org/obp/ui/#iso:std:iso-iec:19770:-3:ed-1:v1:en#ValidUntil"
+            }
+          ]
+        },
+        {
+          "type": "ExternalReference",
+          "keys": [
+            {
+              "type": "GlobalReference",
+              "value": "https://cyclonedx.org/docs/1.6/json/#components_items_licenses_items_license_licensing_expiration"
+            }
+          ]
+        }
+      ],
+      "value": "2026-12-31T23:59:59Z"
+    },
+
+    {
+      "modelType": "Property",
+      "idShort": "LastRenewal",
+      "valueType": "xs:dateTime",
+      "description": [
+        {
+          "language": "en",
+          "text": "Date of the most recent license renewal."
+        }
+      ],
+      "semanticId": {
+        "type": "ExternalReference",
+        "keys": [
+          {
+            "type": "GlobalReference",
+            "value": "https://admin-shell.io/idta/LicensingInformation/1/0/LastRenewal"
+          }
+        ]
+      },
+      "supplementalSemanticIds": [
+        {
+          "type": "ExternalReference",
+          "keys": [
+            {
+              "type": "GlobalReference",
+              "value": "https://cyclonedx.org/docs/1.6/json/#components_items_licenses_items_license_licensing_lastRenewal"
+            }
+          ]
+        }
+      ],
+      "value": "2026-01-01T00:00:00Z"
+    },
+
+    {
+      "modelType": "Property",
+      "idShort": "AutoRenewal",
+      "valueType": "xs:boolean",
+      "description": [
+        {
+          "language": "en",
+          "text": "Indicates whether the subscription auto-renews."
+        }
+      ],
+      "semanticId": {
+        "type": "ExternalReference",
+        "keys": [
+          {
+            "type": "GlobalReference",
+            "value": "https://admin-shell.io/idta/LicensingInformation/1/0/AutoRenewal"
+          }
+        ]
+      },
+      "supplementalSemanticIds": [
+        {
+          "type": "ExternalReference",
+          "keys": [
+            {
+              "type": "GlobalReference",
+              "value": "https://www.iso.org/obp/ui/#iso:std:iso-iec:19770:-3:ed-1:v1:en#AutoRenewal"
+            }
+          ]
+        }
+      ],
+      "value": "true"
+    },
+
+    {
+      "modelType": "MultiLanguageProperty",
+      "idShort": "Licensor",
+      "description": [
+        {
+          "language": "en",
+          "text": "Organization or individual granting the license."
+        }
+      ],
+      "semanticId": {
+        "type": "ExternalReference",
+        "keys": [
+          {
+            "type": "GlobalReference",
+            "value": "https://admin-shell.io/idta/LicensingInformation/1/0/Licensor"
+          }
+        ]
+      },
+      "supplementalSemanticIds": [
+        {
+          "type": "ExternalReference",
+          "keys": [
+            {
+              "type": "GlobalReference",
+              "value": "https://cyclonedx.org/docs/1.6/json/#components_items_licenses_items_license_licensing_licensor"
+            }
+          ]
+        }
+      ],
+      "value": [
+        { "language": "en", "text": "Acme Corp" }
+      ]
+    },
+
+    {
+      "modelType": "MultiLanguageProperty",
+      "idShort": "Licensee",
+      "description": [
+        {
+          "language": "en",
+          "text": "Organization or individual receiving the license."
+        }
+      ],
+      "semanticId": {
+        "type": "ExternalReference",
+        "keys": [
+          {
+            "type": "GlobalReference",
+            "value": "https://admin-shell.io/idta/LicensingInformation/1/0/Licensee"
+          }
+        ]
+      },
+      "supplementalSemanticIds": [
+        {
+          "type": "ExternalReference",
+          "keys": [
+            {
+              "type": "GlobalReference",
+              "value": "https://cyclonedx.org/docs/1.6/json/#components_items_licenses_items_license_licensing_licensee"
+            }
+          ]
+        }
+      ],
+      "value": [
+        { "language": "en", "text": "Contoso Manufacturing GmbH" }
+      ]
+    },
+
+    {
+      "modelType": "MultiLanguageProperty",
+      "idShort": "Purchaser",
+      "description": [
+        {
+          "language": "en",
+          "text": "Organization or individual that purchased the license, if different from the licensee."
+        }
+      ],
+      "semanticId": {
+        "type": "ExternalReference",
+        "keys": [
+          {
+            "type": "GlobalReference",
+            "value": "https://admin-shell.io/idta/LicensingInformation/1/0/Purchaser"
+          }
+        ]
+      },
+      "supplementalSemanticIds": [
+        {
+          "type": "ExternalReference",
+          "keys": [
+            {
+              "type": "GlobalReference",
+              "value": "https://cyclonedx.org/docs/1.6/json/#components_items_licenses_items_license_licensing_purchaser"
+            }
+          ]
+        }
+      ],
+      "value": [
+        { "language": "en", "text": "Contoso Manufacturing GmbH, Procurement Dept." }
+      ]
+    },
+
+    {
+      "modelType": "Property",
+      "idShort": "PurchaseOrder",
+      "valueType": "xs:string",
+      "description": [
+        {
+          "language": "en",
+          "text": "Reference to the associated purchase order, e.g. linking to SMT IDTA 02050 PurchaseOrder."
+        }
+      ],
+      "semanticId": {
+        "type": "ExternalReference",
+        "keys": [
+          {
+            "type": "GlobalReference",
+            "value": "https://admin-shell.io/idta/LicensingInformation/1/0/PurchaseOrder"
+          }
+        ]
+      },
+      "supplementalSemanticIds": [
+        {
+          "type": "ExternalReference",
+          "keys": [
+            {
+              "type": "GlobalReference",
+              "value": "https://cyclonedx.org/docs/1.6/json/#components_items_licenses_items_license_licensing_purchaseOrder"
+            }
+          ]
+        },
+        {
+          "type": "ExternalReference",
+          "keys": [
+            {
+              "type": "GlobalReference",
+              "value": "https://admin-shell.io/idta/PurchaseOrder/1/0"
+            }
+          ]
+        }
+      ],
+      "value": "PO-2026-004471"
+    },
+
+    {
+      "modelType": "SubmodelElementList",
+      "idShort": "AltIds",
+      "typeValueListElement": "Property",
+      "valueTypeListElement": "xs:string",
+      "description": [
+        {
+          "language": "en",
+          "text": "Alternative internal or vendor-specific license identifiers."
+        }
+      ],
+      "semanticId": {
+        "type": "ExternalReference",
+        "keys": [
+          {
+            "type": "GlobalReference",
+            "value": "https://admin-shell.io/idta/LicensingInformation/1/0/AltIds"
+          }
+        ]
+      },
+      "supplementalSemanticIds": [
+        {
+          "type": "ExternalReference",
+          "keys": [
+            {
+              "type": "GlobalReference",
+              "value": "https://cyclonedx.org/docs/1.6/json/#components_items_licenses_items_license_licensing_altIds"
+            }
+          ]
+        }
+      ],
+      "value": [
+        { "modelType": "Property", "valueType": "xs:string", "value": "VENDOR-LIC-88213" },
+        { "modelType": "Property", "valueType": "xs:string", "value": "SAP-CONTRACT-2026-4471" }
+      ]
+    },
+
+    {
+      "modelType": "Property",
+      "idShort": "MaxConcurrentUsers",
+      "valueType": "xs:int",
+      "description": [
+        {
+          "language": "en",
+          "text": "Maximum number of simultaneous users."
+        }
+      ],
+      "semanticId": {
+        "type": "ExternalReference",
+        "keys": [
+          {
+            "type": "GlobalReference",
+            "value": "https://admin-shell.io/idta/LicensingInformation/1/0/MaxConcurrentUsers"
+          }
+        ]
+      },
+      "supplementalSemanticIds": [
+        {
+          "type": "ExternalReference",
+          "keys": [
+            {
+              "type": "GlobalReference",
+              "value": "https://www.iso.org/obp/ui/#iso:std:iso-iec:19770:-3:ed-1:v1:en#MaxConcurrentUsers"
+            }
+          ]
+        }
+      ],
+      "value": "250"
+    },
+
+    {
+      "modelType": "Property",
+      "idShort": "MaxInstallations",
+      "valueType": "xs:int",
+      "description": [
+        {
+          "language": "en",
+          "text": "Maximum number of allowed installations."
+        }
+      ],
+      "semanticId": {
+        "type": "ExternalReference",
+        "keys": [
+          {
+            "type": "GlobalReference",
+            "value": "https://admin-shell.io/idta/LicensingInformation/1/0/MaxInstallations"
+          }
+        ]
+      },
+      "supplementalSemanticIds": [
+        {
+          "type": "ExternalReference",
+          "keys": [
+            {
+              "type": "GlobalReference",
+              "value": "https://www.iso.org/obp/ui/#iso:std:iso-iec:19770:-3:ed-1:v1:en#MaxInstallations"
+            }
+          ]
+        }
+      ],
+      "value": "500"
+    },
+
+    {
+      "modelType": "Property",
+      "idShort": "UsageQuota",
+      "valueType": "xs:string",
+      "description": [
+        {
+          "language": "en",
+          "text": "Usage limits, e.g. API calls/month, storage GB, compute hours."
+        }
+      ],
+      "semanticId": {
+        "type": "ExternalReference",
+        "keys": [
+          {
+            "type": "GlobalReference",
+            "value": "https://admin-shell.io/idta/LicensingInformation/1/0/UsageQuota"
+          }
+        ]
+      },
+      "supplementalSemanticIds": [
+        {
+          "type": "ExternalReference",
+          "keys": [
+            {
+              "type": "GlobalReference",
+              "value": "https://www.iso.org/obp/ui/#iso:std:iso-iec:19770:-3:ed-1:v1:en#UsageQuota"
+            }
+          ]
+        }
+      ],
+      "value": "100000"
+    },
+
+    {
+      "modelType": "Property",
+      "idShort": "UsageUnit",
+      "valueType": "xs:string",
+      "description": [
+        {
+          "language": "en",
+          "text": "Unit for usage quota, e.g. requests, GB, hours."
+        }
+      ],
+      "semanticId": {
+        "type": "ExternalReference",
+        "keys": [
+          {
+            "type": "GlobalReference",
+            "value": "https://admin-shell.io/idta/LicensingInformation/1/0/UsageUnit"
+          }
+        ]
+      },
+      "supplementalSemanticIds": [
+        {
+          "type": "ExternalReference",
+          "keys": [
+            {
+              "type": "GlobalReference",
+              "value": "https://www.iso.org/obp/ui/#iso:std:iso-iec:19770:-3:ed-1:v1:en#UsageUnit"
+            }
+          ]
+        }
+      ],
+      "value": "API calls/month"
+    },
+
+    {
+      "modelType": "Property",
+      "idShort": "ActivationKey",
+      "valueType": "xs:string",
+      "category": "CONSTANT",
+      "description": [
+        {
+          "language": "en",
+          "text": "License key or activation code. Should be encrypted or stored as a reference only, not in cleartext."
+        }
+      ],
+      "semanticId": {
+        "type": "ExternalReference",
+        "keys": [
+          {
+            "type": "GlobalReference",
+            "value": "https://admin-shell.io/idta/LicensingInformation/1/0/ActivationKey"
+          }
+        ]
+      },
+      "supplementalSemanticIds": [
+        {
+          "type": "ExternalReference",
+          "keys": [
+            {
+              "type": "GlobalReference",
+              "value": "https://www.iso.org/obp/ui/#iso:std:iso-iec:19770:-3:ed-1:v1:en#ActivationKey"
+            }
+          ]
+        }
+      ],
+      "value": "vault://secrets/licensing/acme-enterprise-88213"
+    },
+
+    {
+      "modelType": "MultiLanguageProperty",
+      "idShort": "LicenseScope",
+      "description": [
+        {
+          "language": "en",
+          "text": "Scope of the license, e.g. Development, Production, Testing."
+        }
+      ],
+      "semanticId": {
+        "type": "ExternalReference",
+        "keys": [
+          {
+            "type": "GlobalReference",
+            "value": "https://admin-shell.io/idta/LicensingInformation/1/0/LicenseScope"
+          }
+        ]
+      },
+      "supplementalSemanticIds": [
+        {
+          "type": "ExternalReference",
+          "keys": [
+            {
+              "type": "GlobalReference",
+              "value": "https://www.iso.org/obp/ui/#iso:std:iso-iec:19770:-3:ed-1:v1:en#LicenseScope"
+            }
+          ]
+        }
+      ],
+      "value": [
+        { "language": "en", "text": "Production" }
+      ]
+    },
+
+    {
+      "modelType": "Property",
+      "idShort": "UpgradeEligibility",
+      "valueType": "xs:boolean",
+      "description": [
+        {
+          "language": "en",
+          "text": "Indicates whether free upgrades to newer versions are included."
+        }
+      ],
+      "semanticId": {
+        "type": "ExternalReference",
+        "keys": [
+          {
+            "type": "GlobalReference",
+            "value": "https://admin-shell.io/idta/LicensingInformation/1/0/UpgradeEligibility"
+          }
+        ]
+      },
+      "supplementalSemanticIds": [
+        {
+          "type": "ExternalReference",
+          "keys": [
+            {
+              "type": "GlobalReference",
+              "value": "https://www.iso.org/obp/ui/#iso:std:iso-iec:19770:-3:ed-1:v1:en#UpgradeEligibility"
+            }
+          ]
+        }
+      ],
+      "value": "true"
+    },
+
+    {
+      "modelType": "SubmodelElementCollection",
+      "idShort": "LicenseRestrictions",
+      "description": [
+        {
+          "language": "en",
+          "text": "Collection of additional constraints, e.g. geographic, hardware binding."
+        }
+      ],
+      "semanticId": {
+        "type": "ExternalReference",
+        "keys": [
+          {
+            "type": "GlobalReference",
+            "value": "https://admin-shell.io/idta/LicensingInformation/1/0/LicenseRestrictions"
+          }
+        ]
+      },
+      "supplementalSemanticIds": [
+        {
+          "type": "ExternalReference",
+          "keys": [
+            {
+              "type": "GlobalReference",
+              "value": "https://www.iso.org/obp/ui/#iso:std:iso-iec:19770:-3:ed-1:v1:en#LicenseRestrictions"
+            }
+          ]
+        }
+      ],
+      "value": [
+        {
+          "modelType": "Property",
+          "idShort": "GeographicRestriction",
+          "valueType": "xs:string",
+          "value": "EU, CH, UK"
+        },
+        {
+          "modelType": "Property",
+          "idShort": "HardwareBinding",
+          "valueType": "xs:string",
+          "value": "ECU Serial Number f18c-33a90"
+        }
+      ]
+    },
+
+    {
+      "modelType": "SubmodelElementList",
+      "idShort": "ComplianceCertificates",
+      "typeValueListElement": "File",
+      "description": [
+        {
+          "language": "en",
+          "text": "Links to compliance documents, e.g. SOC 2, ISO 27001."
+        }
+      ],
+      "semanticId": {
+        "type": "ExternalReference",
+        "keys": [
+          {
+            "type": "GlobalReference",
+            "value": "https://admin-shell.io/idta/LicensingInformation/1/0/ComplianceCertificates"
+          }
+        ]
+      },
+      "supplementalSemanticIds": [
+        {
+          "type": "ExternalReference",
+          "keys": [
+            {
+              "type": "GlobalReference",
+              "value": "https://www.iso.org/obp/ui/#iso:std:iso-iec:19770:-3:ed-1:v1:en#ComplianceCertificates"
+            }
+          ]
+        }
+      ],
+      "value": [
+        {
+          "modelType": "File",
+          "contentType": "application/pdf",
+          "value": "/aasx/files/ISO27001_Certificate_AcmeCorp_2026.pdf"
+        },
+        {
+          "modelType": "File",
+          "contentType": "application/pdf",
+          "value": "/aasx/files/SOC2_TypeII_Report_AcmeCorp_2026.pdf"
+        }
+      ]
+    }
+
+  ]
+}
